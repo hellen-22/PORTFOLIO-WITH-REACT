@@ -1,7 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./../css/Header.css";
-import Avatar from "./../images/avatar.jpg";
 
 function Header() {
   return (
