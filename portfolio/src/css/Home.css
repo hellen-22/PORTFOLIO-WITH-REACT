@@ -1,0 +1,65 @@
+#home-container {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+}
+
+#home-container * {
+  transition: ease-in-out 0.3s;
+}
+
+#home-container h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#home-container h1 a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+#home-container h1 a:hover {
+  color: rgba(233, 6, 233, 0.863);
+  line-height: 1;
+  display: inline-block;
+}
+
+#home-container h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#home-container .social-links {
+  margin-top: 40px;
+  display: flex;
+}
+
+#home-container .social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#home-container .social-links a .social{
+    width: 80%;
+    height: 80%;
+    color: rgb(71, 14, 14)
+}
+
+#home-container .social-links a .social:hover{
+    color: rgba(233, 6, 233, 0.863);
+}

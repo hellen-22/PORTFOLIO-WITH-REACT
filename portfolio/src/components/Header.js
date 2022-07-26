@@ -6,7 +6,6 @@ import Avatar from "./../images/avatar.jpg";
 function Header() {
   return (
     <Navbar expand="lg" className="headerr">
-      <Navbar.Brand ><img src={Avatar} alt="portfolio" className="avatar" ></img></Navbar.Brand>
       <Navbar.Collapse id="navbarSupportedContent">
         <Nav className="mx-auto items">
           <Nav.Item className="item">
