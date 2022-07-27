@@ -2,13 +2,15 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import background from "./images/background.jpg";
+import About from "./components/About";
 
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage : `url(${background})`, backgroundSize : "cover", height : "100vh" }}>
+    <div className="App" >
       <Header />
-      <Home />
+      
+      <About />
       <Footer />
     </div>
   );

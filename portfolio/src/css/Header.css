@@ -1,5 +1,5 @@
 .headerr{
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     background-color: rgba(167, 220, 247, 0.247);
     font-weight: bold;
@@ -7,12 +7,9 @@
     position: fixed;
 }
 /* Avatar same height as headerr*/
-.avatar{
-    height: 80px;
-    border-radius: 50%;
-}
+
 .item{
-    padding: 10px;
+    padding: 0px;
     margin: 10px;
 }
 .item .link{
