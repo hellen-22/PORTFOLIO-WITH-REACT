@@ -1,10 +1,14 @@
 import React from "react";
 import "./../css/Home.css";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Header from "./Header";
+import Footer from "./Footer";
 
 
 function Home() {
   return (
+    <>
+    <Header />
     <main id="home-container">
       <div className="container">
         <h1>
@@ -31,6 +35,8 @@ function Home() {
 
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
 

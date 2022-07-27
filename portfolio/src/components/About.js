@@ -2,9 +2,13 @@ import React from "react";
 import myImage from "./../images/profile.jpg";
 import Chevron from "react-chevron";
 import "./../css/About.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function About() {
   return (
+    <>
+    <Header />
     <section id="about" className="about">
       {/* About */}
       <div className="about-me container">
@@ -270,6 +274,8 @@ function About() {
         </div>
       </div>
     </section>
+    < Footer />
+    </>
   );
 }
 
