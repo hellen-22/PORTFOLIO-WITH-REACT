@@ -18,17 +18,17 @@ function Home() {
         <h2>
           I'm a passionate <span>web developer</span> from Nairobi Kenya.
         </h2>
-        <div class="social-links">
-          <a class="twitter">
+        <div className="social-links">
+          <a className="twitter">
             <FaTwitter className="social" />
           </a>
-          <a class="instagram">
+          <a className="instagram">
             <FaInstagram  className="social"/>
           </a>
-          <a class="linkedin">
+          <a className="linkedin">
             <FaLinkedin className="social"/>
           </a>
-          <a class="github">
+          <a className="github">
             <FaGithub className="social" />
           </a>
         </div>

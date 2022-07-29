@@ -18,7 +18,7 @@ function Header() {
             <Link className="nav-link link" to="/resume"> Resume </Link>
           </Nav.Item>
           <Nav.Item className="item">
-            <Nav.Link className="link"> Projects </Nav.Link>
+            <Link className="nav-link link" to="/projects"> Projects </Link>
           </Nav.Item>
           <Nav.Item className="item">
             <Nav.Link className="link"> Contact </Nav.Link>

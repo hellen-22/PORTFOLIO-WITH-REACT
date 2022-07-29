@@ -7,17 +7,17 @@ function Resume() {
   return (
     <>
     < Header />
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
+    <section id="resume" className="resume">
+      <div className="container">
+        <div className="section-title">
           <h2>Resume</h2>
           <p>Check My Resume</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
+        <div className="row">
+          <div className="col-lg-6">
+            <h3 className="resume-title">Sumary</h3>
+            <div className="resume-item pb-0">
               <h4>Hellen Wainaina</h4>
               <p>
                 <em>
@@ -35,8 +35,8 @@ function Resume() {
               </p>
             </div>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
+            <h3 className="resume-title">Education</h3>
+            <div className="resume-item">
               <h4>Bachelor of Science in Information Technology</h4>
               <h5>2018 - 2022</h5>
               <p>
@@ -48,7 +48,7 @@ function Resume() {
                 nerada porti sand markend
               </p>
             </div>
-            <div class="resume-item">
+            <div className="resume-item">
               <h4>Data Science Mentorship Program</h4>
               <h5>2021 - 2021</h5>
               <p>
@@ -62,9 +62,9 @@ function Resume() {
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
+          <div className="col-lg-6">
+            <h3 className="resume-title">Professional Experience</h3>
+            <div className="resume-item">
               <h4>Backend Intern with Django-Python</h4>
               <h5>2021 - 2022</h5>
               <p>
@@ -91,7 +91,7 @@ function Resume() {
                 </ul>
               </p>
             </div>
-            <div class="resume-item">
+            <div className="resume-item">
               <h4>Frontend and Backend Intern with JavaScript</h4>
               <h5>2017 - 2018</h5>
               <p>
