@@ -9,63 +9,63 @@ function Projects() {
             id: 1,
             title: "App 1",
             description: "Web",
-            image: require("./../images/portfolio/portfolio-1.jpg"),
+            image: require("./../images/project/portfolio-1.jpg"),
             link: ""
         },
         {
             id: 2,
             title: "App 2",
             description: "Web",
-            image: require("./../images/portfolio/portfolio-2.jpg"),
+            image: require("./../images/project/portfolio-2.jpg"),
             link: ""
         },
         {
             id: 3,
             title: "App 3",
             description: "Web",
-            image: require("./../images/portfolio/portfolio-3.jpg"),
+            image: require("./../images/project/portfolio-3.jpg"),
             link: ""
         },
         {
             id: 4,
             title: "App 4",
             description: "Web",
-            image: require("./../images/portfolio/portfolio-4.jpg"),
+            image: require("./../images/project/portfolio-4.jpg"),
             link: ""
         },
         {
             id: 5,
             title: "App 5",
             description: "App",
-            image: require("./../images/portfolio/portfolio-5.jpg"),
+            image: require("./../images/project/portfolio-5.jpg"),
             link: ""
         },
         {
             id: 6,
             title: "App 6",
             description: "App",
-            image: require("./../images/portfolio/portfolio-6.jpg"),
+            image: require("./../images/project/portfolio-6.jpg"),
             link: ""
         },
         {
             id: 7,
             title: "App 7",
             description: "App",
-            image: require("./../images/portfolio/portfolio-7.jpg"),
+            image: require("./../images/project/portfolio-7.jpg"),
             link: ""
         },
         {
             id: 8,
             title: "App 8",
             description: "App",
-            image: require("./../images/portfolio/portfolio-8.jpg"),
+            image: require("./../images/project/portfolio-8.jpg"),
             link: ""
         },
         {
             id: 9,
             title: "App 9",
             description: "Web",
-            image: require("./../images/portfolio/portfolio-9.jpg"),
+            image: require("./../images/project/portfolio-9.jpg"),
             link: ""
         }
     ]);
@@ -99,16 +99,16 @@ function Projects() {
   return (
     <>
       <Header />
-      <section id="portfolio" className="portfolio">
+      <section id="project" className="project">
         <div className="container">
           <div className="section-title">
-            <h2>Portfolio</h2>
+            <h2>Project</h2>
             <p>My Works</p>
           </div>
 
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
+              <ul id="project-flters">
                 <li data-filter="*" onClick={() => handleClick()}>All</li>
                 <li data-filter=".filter-app" onClick={() => changeProject()}>App</li>
                 <li data-filter=".filter-card">Card</li>
@@ -117,33 +117,33 @@ function Projects() {
             </div>
           </div>
 
-          <div className="row portfolio-container">
+          <div className="row project-container">
             {projects.map(project => (
-            <div className="col-lg-4 col-md-6 portfolio-item filter-app" key={project.id}>
-              <div className="portfolio-wrap">
+            <div className="col-lg-4 col-md-6 project-item filter-app" key={project.id}>
+              <div className="project-wrap">
                 <img
                   src={project.image}
                   className="img-fluid"
                   alt=""
                 ></img>
-                <div className="portfolio-info">
+                <div className="project-info">
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
-                  <div className="portfolio-links">
+                  <div className="project-links">
                     <a
                       href={project.image}
-                      data-gallery="portfolioGallery"
-                      className="portfolio-lightbox"
+                      data-gallery="projectGallery"
+                      className="project-lightbox"
                       title="App 1"
                     >
                       <i className="bx bx-plus"></i>
                     </a>
                     <a
-                      href="portfolio-details.html"
-                      data-gallery="portfolioDetailsGallery"
+                      href="project-details.html"
+                      data-gallery="projectDetailsGallery"
                       data-glightbox="type: external"
-                      className="portfolio-details-lightbox"
-                      title="Portfolio Details"
+                      className="project-details-lightbox"
+                      title="Project Details"
                     >
                       <i className="bx bx-link"></i>
                     </a>
