@@ -27,7 +27,7 @@ function Contact() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           width: "100vw",
-          height: "100vh",
+          height: "auto",
         }}
       >
         <div className="container">
