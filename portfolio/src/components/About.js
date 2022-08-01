@@ -4,12 +4,21 @@ import Chevron from "react-chevron";
 import "./../css/About.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import background from "./../images/background.jpg";
+
 
 function About() {
   return (
     <>
     <Header />
-    <section id="about" className="about">
+    <section id="about" className="about"
+    style={{
+      backgroundImage: `url(${background})`,
+      backgroundSize: "cover",
+      width: "100vw",
+      height: "auto",
+    }}
+    >
       {/* About */}
       <div className="about-me container">
         <div className="section-title">
