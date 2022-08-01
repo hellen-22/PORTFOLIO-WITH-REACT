@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="headerr">
-      <Navbar.Brand className="brand">Hellen Wainaina</Navbar.Brand>
+      <Navbar.Brand className="brand">Portfolio</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto items">

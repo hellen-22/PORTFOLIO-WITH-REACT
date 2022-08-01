@@ -15,7 +15,7 @@ function Home() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           width: "100vw",
-          height: "auto",
+          height: "100vh",
         }}
       >
         <div className="container">
