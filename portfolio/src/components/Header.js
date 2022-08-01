@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="headerr">
-      <Navbar.Collapse id="navbarSupportedContent">
+    <Navbar collapseOnSelect expand="lg" className="headerr">
+      <Navbar.Brand className="brand">Hellen Wainaina</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto items">
           <Nav.Item className="item">
             <Link className="nav-link link"  to="/"  > Home </Link>
