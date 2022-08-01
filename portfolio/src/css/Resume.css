@@ -54,3 +54,14 @@
   background: rgba(233, 6, 233, 0.863);
   border: 2px solid rgba(233, 6, 233, 0.863);
 }
+
+.she-code-certificate, 
+.resume-link {
+  text-decoration: underline;
+  color: black;
+}
+
+.she-code-certificate:hover,
+.resume-link:hover {
+  color: rgba(233, 6, 233, 0.863);
+}
