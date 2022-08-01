@@ -21,7 +21,7 @@ function Header() {
             <Link className="nav-link link" to="/projects"> Projects </Link>
           </Nav.Item>
           <Nav.Item className="item">
-            <Nav.Link className="link"> Contact </Nav.Link>
+            <Link className="nav-link link" to="/contact"> Contact </Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
