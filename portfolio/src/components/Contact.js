@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Form, Button, Row, Col } from "react-bootstrap";
@@ -15,8 +15,42 @@ import {
 } from "react-icons/fa";
 import "./../css/Contact.css";
 import background from "../images/background.jpg";
+import axios from "axios";
 
 function Contact() {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const subjectRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let data ={
+      name: nameRef.current.value,
+      email: emailRef.current.value,
+      subject: subjectRef.current.value,
+      message: messageRef.current.value
+    }
+    console.log(data)
+
+    let responses = axios({
+      method: "POST",
+      url: "http://localhost:3008/contact",
+      data: data,
+      headers :{
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => {
+      console.log(response)
+    }
+    ).catch((error) => {
+      console.log(error)
+    }
+    )
+
+  }
+
   return (
     <>
       <Header />
@@ -108,6 +142,7 @@ function Contact() {
             method="post"
             role="form"
             className="php-email-form mt-4"
+            onSubmit={handleSubmit}
           >
             <Row>
               <Col md={6}>
@@ -117,6 +152,7 @@ function Contact() {
                     name="name"
                     id="name"
                     placeholder="Your Name"
+                    ref={nameRef}
                     required
                   />
                 </Form.Group>
@@ -128,6 +164,7 @@ function Contact() {
                     name="email"
                     id="email"
                     placeholder="Your Email"
+                    ref={emailRef}
                     required
                   />
                 </Form.Group>
@@ -139,6 +176,7 @@ function Contact() {
                 name="subject"
                 id="subject"
                 placeholder="Subject"
+                ref={subjectRef}
                 required
               />
             </Form.Group>
@@ -148,6 +186,7 @@ function Contact() {
                 name="message"
                 rows="5"
                 placeholder="Message"
+                ref={messageRef}
                 required
               ></textarea>
             </Form.Group>
